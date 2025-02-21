@@ -168,18 +168,20 @@ const Translator = () => {
         <ToastContainer position="top-center" autoClose={3000} />
 
         {/* Chat Messages */}
-        <div className="flex flex-col gap-6 py-12">
+        <div className="flex flex-col gap-6 py-20">
           {messages.length > 0 ? (
             messages.map((msg, index) => (
               <div key={index} className="flex w-full">
                 {msg.type === "sent" ? (
                   // Original message on the right
-                  <div className="ml-auto max-w-[70%] bg-gray-300 p-2 rounded-xl self-end dark:bg-white dark:text-black">
-                    <p>{msg.text}</p>
+                  <div className="ml-auto max-w-[90%] grid bg-gray-300 p-2 rounded-xl self-end dark:bg-white dark:text-black">
+                    <p className="md:text-lg">{msg.text}</p>
                     {msg.detectedLanguage && (
-                      <span className="text-xs">
-                        {`(${languageMap[msg.detectedLanguage] ||
-                          msg.detectedLanguage})`}
+                      <span className="text-[10px] md:text-xs">
+                        {`(${
+                          languageMap[msg.detectedLanguage] ||
+                          msg.detectedLanguage
+                        })`}
                       </span>
                     )}
                   </div>
@@ -187,10 +189,10 @@ const Translator = () => {
                   // Translated message on the left
                   <div className="flex gap-1">
                     <SiGoogletranslate className="mt-1 text-4xl text-blue-700 max-w-[23px] dark:text-white" />
-                    <div className="w-[90%] flex p-2 rounded-xl self-start">
-                      <p>{msg.text}</p>
+                    <div className="max-w-[90%] grid p-2 rounded-xl self-start">
+                      <p className="md:text-lg">{msg.text}</p>
                       {msg.targetLanguage && (
-                        <span className="text-xs">
+                        <span className="text-[10px] md:text-xs">
                           {`(${languageMap[msg.targetLanguage]})`}
                         </span>
                       )}
@@ -244,7 +246,7 @@ const Translator = () => {
 
           {/* Target Language Selection */}
           <select
-            className="w-full my-2 p-3 border rounded-xl focus:outline-none dark:text-black"
+            className="w-full my-2 p-3 border rounded-xl shadow-md focus:outline-none dark:text-black dark:sahdow-gray-800"
             value={targetLanguage}
             onChange={(e) => setTargetLanguage(e.target.value)}
           >
@@ -271,7 +273,7 @@ const Translator = () => {
             {/* Buttons */}
             <div className="flex justify-between gap-2">
               <button
-                className="py-2 px-6 rounded-xl flex items-center justify-center font-semibold border-2 border-gray-300 bg-gray-300 dark:bg-transparent dark:text-white dark:border-white"
+                className="py-2 px-6 rounded-xl shadow-md flex items-center justify-center font-semibold border-2 border-gray-300 shadow-gray-400 bg-gray-300 dark:bg-gray-500 dark:text-white dark:border-gray-600 dark:shadow-gray-800 "
                 onClick={handleClearMessages}
               >
                 <GrClearOption className="mr-2 text-xl dark:text-white" />
@@ -279,16 +281,16 @@ const Translator = () => {
               </button>
 
               <button
-                className={`p-2.5 rounded-full border-2 flex items-center justify-center border-gray-300 ${
+                className={`p-2.5 rounded-full shadow-md shadow-gray-400 border-gray-300 border-2 flex items-center justify-center dark:border-gray-600 dark:shadow-gray-800 ${
                   loading
                     ? "bg-white cursor-not-allowed"
-                    : "bg-gray-300 dark:bg-transparent"
+                    : "bg-gray-300 dark:bg-gray-500"
                 }`}
                 onClick={handleTranslate}
                 disabled={loading}
               >
                 {loading ? (
-                  <ImSpinner9 className="animate-spin text-lg dark:text-white " />
+                  <ImSpinner9 className="animate-spin text-lg dark:text-black " />
                 ) : (
                   <ImArrowUp2 className="text-lg dark:text-white" />
                 )}
