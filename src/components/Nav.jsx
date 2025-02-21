@@ -24,9 +24,9 @@ const Nav = () => {
         scrolled ? "bg-blue-800 text-white dark:bg-gray-900 shadow-lg" : "bg-transparent"
       }`}
     >
-      <SiGoogletranslate className={`text-4xl dark:text-white ${
-        scrolled ? "text-white":"text-blue-700" }`} />
-      <h1 className="text-2xl md:text-3xl dark:text-gray-200">
+      <SiGoogletranslate className={`text-3xl md:text-4xl dark:text-white ${
+      scrolled ? "text-white":"text-blue-700" }`} />
+      <h1 className="text-xl text-center sm:text-2xl md:text-3xl xl:text-4xl dark:text-gray-200">
         AI-Powered Chat Translator
       </h1>
       <Toggle />

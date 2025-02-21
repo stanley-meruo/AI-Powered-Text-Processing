@@ -17,7 +17,7 @@ const Toggle = () => {
       <div className="">
         <button
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          className="p-2 rounded-md border border-gray-500 transition duration-300 bg-white text-gray-800 dark:bg-gray-800"
+          className="p-1 rounded-md border border-gray-500 transition duration-300 bg-white text-gray-800 dark:bg-gray-800 md:p-2"
         >
           {theme === "light" ? "🌙" : "☀️"}
         </button>

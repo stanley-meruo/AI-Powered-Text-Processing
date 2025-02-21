@@ -246,7 +246,7 @@ const Translator = () => {
 
           {/* Target Language Selection */}
           <select
-            className="w-full my-2 p-3 border rounded-xl shadow-md focus:outline-none dark:text-black dark:sahdow-gray-800"
+            className="w-full my-2 p-3 border rounded-xl shadow-md focus:outline-none dark:text-black dark:shadow-gray-800"
             value={targetLanguage}
             onChange={(e) => setTargetLanguage(e.target.value)}
           >
