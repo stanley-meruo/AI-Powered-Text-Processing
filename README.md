@@ -1,6 +1,6 @@
 # 🚀 AI-Powered Text Processing Interface
 
-- An advanced text processing tool built with React, Tailwind CSS, and Chrome’s AI APIs. This interface allows users to detect language, translate text, and summarize content efficiently.
+- An advanced text processing tool built with React, Tailwind CSS, and Chrome’s AI APIs. This interface allows users to detect language and translate text efficiently.
 
 ## ✨ Features
 
