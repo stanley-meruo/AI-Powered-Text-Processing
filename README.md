@@ -6,18 +6,18 @@
 
 - Language Detection – Identifies the input language and provides confidence levels.
 - Text Translation – Supports six languages: English, Portuguese, Spanish, Russian, Turkish, and French.
-Dark & Light Mode – User-friendly UI with theme switching.
+- Dark & Light Mode – User-friendly UI with theme switching.
 
 ## ⚠️ Important: Enable Chrome Flags
 - Before using this application, you must enable experimental AI APIs in Chrome:
 
-- 1. Open Chrome and go to:
+- 1 Open Chrome and go to:
 <p align="center">
-  <code>chrome://flags</code>
+  <a href="chrome://flags">chrome://flags</a>
 </p>
-- 2. Search for "Enable Experimental AI APIs".
-- 3. Set it to "Enabled"
-- 4. Restart your browser for changes to take effect
+- 2 Search for "Enable Experimental AI APIs".
+- 3 Set it to "Enabled".
+- 4 Restart your browser for changes to take effect.
 
 ### Built with
 
