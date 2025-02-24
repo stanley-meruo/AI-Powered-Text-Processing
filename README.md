@@ -12,9 +12,11 @@
 - Before using this application, you must enable experimental AI APIs in Chrome:
 
 - Open Chrome and go to:
+  
 <p align="center">
   <code>chrome://flags</code>
 </p>
+
 - Search for "Enable Experimental AI APIs".
 - Set it to "Enabled".
 - Restart your browser for changes to take effect.
