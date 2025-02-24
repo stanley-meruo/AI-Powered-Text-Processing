@@ -13,7 +13,7 @@
 
 - 1 Open Chrome and go to:
 <p align="center">
-  <a href="chrome://flags">chrome://flags</a>
+  <code>chrome://flags</code>
 </p>
 - 2 Search for "Enable Experimental AI APIs".
 - 3 Set it to "Enabled".
