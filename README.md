@@ -11,13 +11,13 @@
 ## ⚠️ Important: Enable Chrome Flags
 - Before using this application, you must enable experimental AI APIs in Chrome:
 
-- 1 Open Chrome and go to:
+- Open Chrome and go to:
 <p align="center">
   <code>chrome://flags</code>
 </p>
-- 2 Search for "Enable Experimental AI APIs".
-- 3 Set it to "Enabled".
-- 4 Restart your browser for changes to take effect.
+- Search for "Enable Experimental AI APIs".
+- Set it to "Enabled".
+- Restart your browser for changes to take effect.
 
 ### Built with
 
