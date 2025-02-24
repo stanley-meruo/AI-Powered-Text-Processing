@@ -1,8 +1,26 @@
-# React + Vite
+# 🚀 AI-Powered Text Processing Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- An advanced text processing tool built with React, Tailwind CSS, and Chrome’s AI APIs. This interface allows users to detect language, translate text, and summarize content efficiently.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Language Detection – Identifies the input language and provides confidence levels.
+Text Translation – Supports six languages: English, Portuguese, Spanish, Russian, Turkish, and French.
+Dark & Light Mode – User-friendly UI with theme switching.
+
+## ⚠️ Important: Enable Chrome Flags
+Before using this application, you must enable experimental AI APIs in Chrome:
+
+1. Open Chrome and go to:
+<p align="center">
+  <code>chrome://flags</code>
+</p>
+2. Search for "Enable Experimental AI APIs".
+3. Set it to "Enabled"
+4. Restart your browser for changes to take effect
+
+### Built with
+
+- [Tailwind CSS](https://tailwindcss.com) - CSS Framework
+- [React](https://reactjs.org/) - JS Frontend Framework
+- [Chrome AI APIs Overview](https://developer.chrome.com/docs/ai/)
